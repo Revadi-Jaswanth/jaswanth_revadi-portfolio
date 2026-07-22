@@ -1,104 +1,66 @@
-# 🚀 3D Developer Portfolio Website (React + TypeScript + Three.js)
+# 🚀 Revadi Naga Sai Jaswanth — Portfolio Website
 
-[![3D portfolio preview (click to watch video)](./Screenshot_2026-04-08_22-10-00.png)](./screen-capture%20(13).webm)
+> Live Website: **[https://revadinagasaijaswanth.me](https://revadinagasaijaswanth.me)**
 
-A modern, high-performance **3D developer portfolio website** built with **React**, **TypeScript**, **Three.js**, **GSAP**, and **WebGL**.
-
-<<<<<<< HEAD
-If you’re a developer looking for a **portfolio template** that feels premium, interactive, and memorable—this repo is for you.
-=======
-<img width="947" height="536" alt="image" src="https://github.com/user-attachments/assets/2b842ec9-5eef-4868-91a9-cc3318ebe020" />
-
->>>>>>> 7b066b4a84b90c422a0153c8228c621c8afd01f8
-
-> Live preview: https://revadinagasaijaswanth.me/
+A modern, high-performance **3D developer & AI engineer portfolio website** built with **React**, **TypeScript**, **Three.js**, **GSAP**, **WebGL**, and **Groq AI**.
 
 ---
 
-## ✨ Highlights
+## ✨ Features & Highlights
 
-- **3D / WebGL experience** powered by **Three.js**
-- Smooth animations with **GSAP**
-- Modern **React + TypeScript** codebase
-- Fast, responsive UI (desktop + mobile)
-- Designed for developers, engineers, programmers, and creators
+- 🤖 **Interactive Draggable AI Chatbot (`Jaswanth AI`)**: AssistiveTouch style floating AI chat widget powered by Groq Llama 3.3.
+- 📱 **Mobile & Desktop Optimized**: Responsive layout with custom mobile loading animation and 3D canvas rendering on desktop.
+- 📜 **Scroll-Synchronized Timeline**: GSAP ScrollTrigger timeline for Experience and Education sections.
+- 💼 **Project Showcase**: Showcase of AI & Full-Stack projects with live preview links.
+- 🏆 **Certifications Grid**: Interactive verified credentials display.
+- 📬 **Direct Contact Form**: Web3Forms integration delivering messages straight to email.
 
 ---
 
 ## 🧰 Tech Stack
 
-- **React**
-- **TypeScript**
-- **Three.js / WebGL**
-- **GSAP**
-- **HTML / CSS / JavaScript**
+- **Frontend Framework**: React + TypeScript + Vite
+- **3D & Graphics**: Three.js + WebGL + React Three Fiber
+- **Animations**: GSAP + ScrollTrigger + Lenis Smooth Scroll
+- **AI Integration**: Groq API (Llama 3.3 70B)
+- **Deployment**: Vercel + Namecheap Custom Domain
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Local Setup & Installation
 
-### 1) Clone
-
+### 1. Clone the repository
 ```bash
-git clone https://github.com/red1-for-hek/portfolio-website.git
-cd portfolio-website
+git clone https://github.com/Revadi-Jaswanth/jaswanth_revadi-portfolio.git
+cd jaswanth_revadi-portfolio
 ```
 
-### 2) Install
-
+### 2. Install dependencies
 ```bash
 npm install
 ```
 
-### 3) Run locally
-
+### 3. Run locally
 ```bash
 npm run dev
 ```
 
-### 4) Build
-
+### 4. Build for production
 ```bash
 npm run build
 ```
 
 ---
 
-## 🧩 Customize (Quick Guide)
+## 🤝 Connect & Contact
 
-Typical things you’ll want to update:
-
-- **Your name + hero section text**
-- **Projects list**
-- **Social links** (GitHub, LinkedIn, email)
-- **SEO meta title/description**
-
----
-
-## ⭐ Support
-
-If you found this useful:
-
-- Please **star** the repository (it helps a lot)
-- Share it with a friend who needs a portfolio template
-- Sponsor via the **Sponsor** button on GitHub (if available in your region)
-
----
-
-## 🤝 Connect
-
-- LinkedIn: https://www.linkedin.com/in/red1-for-hek/
-
----
-
-## 🏷️ Recommended GitHub Topics (add in repo settings)
-
-Add these topics to improve GitHub search visibility:
-
-`portfolio` `developer-portfolio` `portfolio-website` `portfolio-template` `3d-portfolio` `react` `typescript` `threejs` `webgl` `gsap` `frontend` `vite`
+- **Portfolio**: [https://revadinagasaijaswanth.me](https://revadinagasaijaswanth.me)
+- **GitHub**: [github.com/Revadi-Jaswanth](https://github.com/Revadi-Jaswanth)
+- **LinkedIn**: [linkedin.com/in/naga-sai-jaswanth-revadi-93702b295](https://www.linkedin.com/in/naga-sai-jaswanth-revadi-93702b295/)
+- **Email**: [revadijaswanth@gmail.com](mailto:revadijaswanth@gmail.com)
 
 ---
 
 ## 🪪 License
 
-This project is open source and available under the **MIT License**. See [LICENSE](LICENSE).
+This project is open source and available under the **MIT License**.
