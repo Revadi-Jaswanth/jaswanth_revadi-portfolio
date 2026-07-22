@@ -1,6 +1,8 @@
 # 🚀 Revadi Naga Sai Jaswanth - Developer Portfolio Website (React + TypeScript + Three.js)
 
 A modern, high-performance **3D developer portfolio website** built with **React**, **TypeScript**, **Three.js**, **GSAP**, and **WebGL**.
+<img width="947" height="536" alt="image" src="https://github.com/user-attachments/assets/2b842ec9-5eef-4868-91a9-cc3318ebe020" />
+
 
 > Live preview: https://revadinagasaijaswanth.me/
 
