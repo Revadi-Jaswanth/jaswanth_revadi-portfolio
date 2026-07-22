@@ -55,7 +55,7 @@ const ChatWidget = () => {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  // ── Drag & AssistiveTouch State ──
+  // ── Drag & Position State ──
   const [pos, setPos] = useState<{ x: number; y: number } | null>(null);
   const [isDragging, setIsDragging] = useState(false);
   const dragStartRef = useRef<{
@@ -67,6 +67,29 @@ const ChatWidget = () => {
   }>({ startX: 0, startY: 0, startLeft: 0, startTop: 0, hasDragged: false });
 
   const widgetRef = useRef<HTMLButtonElement>(null);
+
+  // Calculate default initial position beside Instagram icon on desktop or bottom-left on mobile
+  useEffect(() => {
+    const calcDefaultPos = () => {
+      const isDesktop = window.innerWidth >= 900;
+      if (isDesktop) {
+        // Find Instagram icon position dynamically if available
+        const instaEl = document.querySelector(".social-icons span:last-child");
+        if (instaEl) {
+          const rect = instaEl.getBoundingClientRect();
+          setPos({ x: rect.right + 16, y: rect.top + 2 });
+          return;
+        }
+        setPos({ x: 260, y: window.innerHeight - 70 });
+      } else {
+        setPos({ x: 20, y: window.innerHeight - 75 });
+      }
+    };
+
+    calcDefaultPos();
+    window.addEventListener("resize", calcDefaultPos);
+    return () => window.removeEventListener("resize", calcDefaultPos);
+  }, []);
 
   useEffect(() => {
     const handleOpen = () => setIsOpen(true);
@@ -122,7 +145,6 @@ const ChatWidget = () => {
     setIsDragging(false);
   };
 
-  // Mouse Listeners
   const handleMouseDown = (e: React.MouseEvent) => {
     onDragStart(e.clientX, e.clientY);
   };
@@ -147,7 +169,6 @@ const ChatWidget = () => {
     };
   }, [isDragging]);
 
-  // Touch Listeners
   const handleTouchStart = (e: React.TouchEvent) => {
     const touch = e.touches[0];
     onDragStart(touch.clientX, touch.clientY);
@@ -220,7 +241,7 @@ const ChatWidget = () => {
   // Smart placement for chat window depending on widget position
   const getWindowStyle = (): React.CSSProperties => {
     if (!pos) {
-      return { bottom: "95px", right: "25px" };
+      return { bottom: "90px", left: "20px" };
     }
 
     const isTopHalf = pos.y < window.innerHeight / 2;
@@ -229,7 +250,7 @@ const ChatWidget = () => {
     const style: React.CSSProperties = {};
 
     if (isTopHalf) {
-      style.top = `${pos.y + 60}px`;
+      style.top = `${pos.y + 55}px`;
     } else {
       style.bottom = `${window.innerHeight - pos.y + 10}px`;
     }
@@ -320,7 +341,7 @@ const ChatWidget = () => {
         </div>
       )}
 
-      {/* Draggable Cloud AssistiveTouch Button */}
+      {/* Draggable Translucent Violet Robot AssistiveTouch Button */}
       <button
         ref={widgetRef}
         className={`cloud-assistive-widget ${isOpen ? "active" : ""} ${
@@ -328,30 +349,21 @@ const ChatWidget = () => {
         }`}
         style={
           pos
-            ? { left: `${pos.x}px`, top: `${pos.y}px`, bottom: "auto", right: "auto" }
-            : { bottom: "25px", right: "25px" }
+            ? { left: `${pos.x}px`, top: `${pos.y}px` }
+            : { bottom: "25px", left: "20px" }
         }
         onMouseDown={handleMouseDown}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
         onClick={handleToggleClick}
-        aria-label="Toggle Draggable Cloud Chat AI"
+        aria-label="Toggle Draggable Robot Chat AI"
       >
-        <div className="cloud-shape-bg"></div>
         {isOpen ? (
           <FaTimes className="cloud-icon" />
         ) : (
           <div className="cloud-content">
-            <svg
-              className="cloud-svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              width="22"
-              height="22"
-            >
-              <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z" />
-            </svg>
+            <FaRobot className="robot-icon" />
             <span className="cloud-text">Chat AI</span>
           </div>
         )}
