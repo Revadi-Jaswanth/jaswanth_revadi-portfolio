@@ -1,14 +1,19 @@
-import { Link } from "react-router-dom";
 import { config } from "../config";
+import { openChatWidgetGlobal } from "./ChatWidget";
 import "./styles/CallToAction.css";
 
 const CallToAction = () => {
   return (
     <div className="cta-section">
       <div className="cta-buttons">
-        <Link to="/play" className="cta-btn cta-btn-play" data-cursor="disable">
-          Play With Me →
-        </Link>
+        <button
+          onClick={openChatWidgetGlobal}
+          className="cta-btn cta-btn-play"
+          data-cursor="disable"
+          style={{ cursor: "pointer" }}
+        >
+          Chat with AI →
+        </button>
         
         <a 
           href={config.contact.linkedin} 
