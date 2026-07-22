@@ -11,7 +11,6 @@ import SocialIcons from "./SocialIcons";
 import WhatIDo from "./WhatIDo";
 import Work from "./Work";
 import TechStackNew from "./TechStackNew";
-import CallToAction from "./CallToAction";
 import ChatWidget from "./ChatWidget";
 import setSplitText from "./utils/splitText";
 
@@ -49,7 +48,6 @@ const MainContainer = ({ children }: PropsWithChildren) => {
         <Work />
         <TechStackNew />
         <Certifications />
-        <CallToAction />
         <Contact />
       </div>
     </div>

@@ -51,6 +51,26 @@
   letter-spacing: 0.2px;
 }
 
+.navbar-hire-btn {
+  background: var(--accentColor);
+  color: #000 !important;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600 !important;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 6px;
+}
+
+.navbar-hire-btn:hover {
+  box-shadow: 0 4px 20px rgba(194, 164, 255, 0.45);
+  transform: translateY(-2px);
+}
+
 @media only screen and (min-width: 500px) {
   .header {
     padding: 20px 0px;
