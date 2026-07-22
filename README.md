@@ -1,5 +1,8 @@
 # 🚀 Revadi Naga Sai Jaswanth — Portfolio Website
 
+<img width="947" height="494" alt="image" src="https://github.com/user-attachments/assets/2d9cff34-7749-4e05-970d-ca79a73c7a9e" />
+
+
 > Live Website: **[https://revadinagasaijaswanth.me](https://revadinagasaijaswanth.me)**
 
 A modern, high-performance **3D developer & AI engineer portfolio website** built with **React**, **TypeScript**, **Three.js**, **GSAP**, **WebGL**, and **Groq AI**.
