@@ -1,193 +1,224 @@
 export const config = {
     developer: {
-        name: "Redoyanul",
-        fullName: "Redoyanul Haque",
-        title: "AI & Full-Stack Developer",
-        description: "AI & Full-Stack Developer building intelligent systems and modern web applications. Passionate about machine learning, deep learning, and creating next-gen autonomous agents."
+        name: "Jaswanth",
+        fullName: "Revadi Naga Sai Jaswanth",
+        title: "AI/ML Engineer & Full-Stack Developer",
+        description: "AI/ML Engineer & Full-Stack Developer building intelligent applications that combine Artificial Intelligence and modern web development. Passionate about machine learning, generative AI, and creating impactful software solutions."
     },
     social: {
-        github: "red1-for-hek",
-        email: "redoyanul1234@gmail.com",
-        location: "Bangladesh"
+        github: "Revadi-Jaswanth",
+        email: "revadijaswanth@gmail.com",
+        location: "Visakhapatnam, India"
     },
     about: {
         title: "About Me",
-        description: "I am a self-taught AI & Full-Stack Developer from Bangladesh. I build intelligent systems, chatbots, and modern web applications. My expertise includes Machine Learning, Deep Learning, NLP, and Full-Stack Web Development with React, Node.js, and Python. Currently building next-gen AI Agents and JARVIS-like Personal Assistants. I have a competitive programming mindset and a deep passion for automation. Code is poetry, AI is the canvas."
+        description: "I'm a final-year Computer Science (AI & ML) undergraduate at ANITS, Visakhapatnam, passionate about building AI-powered applications and scalable full-stack solutions. Through internships and real-world projects, I solve meaningful engineering challenges while continuously exploring emerging technologies. As a Google Student Ambassador and NSS volunteer, I enjoy learning, collaborating, and creating software that makes an impact."
     },
     experiences: [
         {
-            position: "Learning Something New",
-            company: "Self-Development",
-            period: "2025 - Present",
-            location: "Bangladesh",
-            description: "Continuously exploring emerging technologies, researching advanced AI systems, and pushing the boundaries of what's possible in tech.",
-            responsibilities: [
-                "Researching cutting-edge AI and ML technologies",
-                "Experimenting with new frameworks and tools",
-                "Contributing to open-source projects",
-                "Building innovative personal projects"
-            ],
-            technologies: ["Research", "Innovation", "Open Source", "New Tech"]
+            position: "Python Tech Stack Intern",
+            company: "Infosys Springboard",
+            period: "Jun 2026 - Present",
+            location: "Virtual",
+            description: "Selected for Infosys Springboard Virtual Internship 7.0 after completing prerequisite coursework. Building practical expertise in Python through industry-oriented training, project-based learning, and real-world development tasks.",
         },
         {
-            position: "AI Engineer",
-            company: "Freelance & Projects",
-            period: "2025",
-            location: "Bangladesh",
-            description: "Developing intelligent AI systems, chatbots, and machine learning solutions. Building next-gen conversational AI agents and JARVIS-like personal assistants.",
-            responsibilities: [
-                "Building AI-powered chatbots and conversational agents",
-                "Developing machine learning models with TensorFlow and PyTorch",
-                "Working with LLMs and transformer architectures",
-                "Creating autonomous AI systems and automation tools"
-            ],
-            technologies: ["Python", "TensorFlow", "PyTorch", "LLMs", "NLP", "AI Agents"]
+            position: "AI Intern",
+            company: "Edunet Foundation × IBM SkillsBuild",
+            period: "May 2026 - Jun 2026",
+            location: "Virtual",
+            description: "Completed a 6-week AICTE-supported internship focused on Artificial Intelligence and project-based learning. Developed an AI-powered educational assistant using Python, Streamlit, and Generative AI technologies, applying analytical skills to real-world challenges.",
         },
         {
-            position: "Full-Stack Developer",
-            company: "Freelance & Projects",
-            period: "2024",
-            location: "Bangladesh",
-            description: "Built complete web applications from frontend to backend. Developed responsive UIs, RESTful APIs, and database solutions for various clients and projects.",
-            responsibilities: [
-                "Developing full-stack web applications using React and Node.js",
-                "Building RESTful APIs and integrating databases",
-                "Creating responsive and interactive user interfaces",
-                "Deploying and maintaining web applications"
-            ],
-            technologies: ["React", "Node.js", "MongoDB", "Express", "Next.js", "TypeScript"]
+            position: "Google Student Ambassador 2.0",
+            company: "Google — AI Skills House (Gemini Program)",
+            period: "Sep 2025 - Dec 2025",
+            location: "Campus",
+            description: "Selected as a Google Student Ambassador to promote Google Gemini through campus outreach, community engagement, and AI awareness initiatives. Organized Gemini sessions, drove student engagement, and completed all ambassador milestones.",
         },
         {
-            position: "Python Developer",
-            company: "Self-Taught & Projects",
-            period: "2023",
-            location: "Bangladesh",
-            description: "Dove deep into Python programming, building automation scripts, bots, and mastering the fundamentals of software development and problem-solving.",
-            responsibilities: [
-                "Learning Python programming and core concepts",
-                "Building automation scripts and Discord bots",
-                "Exploring data structures and algorithms",
-                "Participating in competitive programming"
-            ],
-            technologies: ["Python", "Automation", "Scripting", "Discord.py", "Problem Solving"]
-        },
-        {
-            position: "Graphic Designer",
-            company: "Freelance",
-            period: "2022",
-            location: "Bangladesh",
-            description: "Started my creative journey as a graphic designer, creating logos, banners, and visual content. This sparked my passion for technology and digital creation.",
-            responsibilities: [
-                "Designing logos and brand identity materials",
-                "Creating social media graphics and banners",
-                "Working with clients on creative projects",
-                "Learning design principles and visual aesthetics"
-            ],
-            technologies: ["Photoshop", "Illustrator", "Canva", "Figma", "Visual Design"]
-        },
-        {
-            position: "Microsoft Office",
-            company: "Begin Learning",
-            period: "2021",
-            location: "Bangladesh",
-            description: "Started my journey into the digital world by learning Microsoft Office tools. This foundational step introduced me to computers and sparked my curiosity for technology.",
-            responsibilities: [
-                "Learning Microsoft Word, Excel, and PowerPoint",
-                "Creating documents and presentations",
-                "Understanding basic computer operations",
-                "Building foundational digital skills"
-            ],
-            technologies: ["MS Word", "MS Excel", "MS PowerPoint", "Computer Basics"]
+            position: "AI Intern",
+            company: "Codec Technologies",
+            period: "May 2025 - Jun 2025",
+            location: "Virtual",
+            description: "Completed a 1-month AI internship focused on industry-oriented concepts. Developed AI-driven solutions using Python, gaining hands-on experience in data processing, model implementation, and analytical problem-solving.",
         }
     ],
+
     projects: [
         {
             id: 1,
             title: "Drishti",
-            category: "AI / LLM",
+            category: "",
             technologies: "Python, PyTorch, Transformers, FastAPI, React, MongoDB",
             image: "/images/drishti.png",
-            description: "Bangladesh's first intelligent advanced AI chatbot powered by a custom Large Language Model. Features natural language understanding, contextual conversations, and multilingual support including Bengali."
+            description: "An intelligent advanced AI chatbot powered by a custom Large Language Model. Features natural language understanding, contextual conversations, and real-time query resolution.",
+            link: "#"
         },
         {
             id: 2,
-            title: "VoteChain",
-            category: "Blockchain",
-            technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask, Node.js",
-            image: "/images/votechain.png",
-            description: "A decentralized election system built on blockchain technology ensuring transparent, tamper-proof, and verifiable voting. Features smart contracts for vote integrity and real-time result tracking."
+            title: "FITSAGE AI - HEALTH COACH",
+            category: "",
+            technologies: "React, Python, Flask, MySQL, Google Gemini API, Recharts, HTML/CSS",
+            image: "/images/fitsage.png",
+            description: "Personalized fitness web app featuring a ChatGPT-style Gemini AI coach, onboarding setup, custom diet & workout schedules, and interactive progress tracking for weight, water intake, and calories.",
+            link: "https://fit-sage-ai.vercel.app/"
         },
         {
             id: 3,
-            title: "EIE - Earthquake Impact Estimator",
-            category: "IoT / Hardware",
-            technologies: "Arduino, C++, IoT Sensors, Python, ML, React",
-            image: "/images/eie.png",
-            description: "A practical circuit-based IoT system utilizing Arduino to predict earthquakes before they strike. Integrates hardware sensors for real-time seismic detection and impact estimation."
+            title: "AI-POWERED STUDY BUDDY",
+            category: "",
+            technologies: "Python, Streamlit, Google Gemini API, PyPDF, SQLite, HTML/CSS",
+            image: "/images/studybuddy.png",
+            description: "AI learning assistant featuring note summarization, custom practice quizzes, digital flashcards, automated study schedules, and textbook PDF document upload & text extraction.",
+            link: "https://aistudybuddy-v6zkmih6dh42r5za4jnxrf.streamlit.app/"
         },
         {
             id: 4,
-            title: "GameKroy",
-            category: "Full Stack",
-            technologies: "React, Node.js, MongoDB, Express, Stripe, TailwindCSS",
-            image: "/images/gamekroy.png",
-            description: "A full-featured e-commerce platform for gaming products. Includes user authentication, product catalog, shopping cart, secure payments, order tracking, and admin dashboard."
+            title: "EMPLOYEE SALARY PREDICTOR",
+            category: "",
+            technologies: "Python, Scikit-learn, Pandas, NumPy, HTML/CSS",
+            image: "/images/salarypredictor.png",
+            description: "Machine learning web app that accurately estimates employee salaries based on work experience, education level, and job role, backed by data cleaning and regression modeling.",
+            link: "https://revadi-jaswanth.github.io/Employee-Salary-Prediction/"
+        }
+    ],
+    education: [
+        {
+            degree: "B.Tech – Computer Science & Engineering (AI & ML)",
+            institution: "Anil Neerukonda Institute of Technology & Sciences",
+            period: "Sep 2023 – Present",
+            location: "Visakhapatnam, India",
+            description: "Pursuing Bachelor of Technology in Computer Science & Engineering with specialization in Artificial Intelligence and Machine Learning, focusing on core AI concepts, deep learning, and intelligent application development.",
+            grade: "CGPA: 8.69"
         },
         {
-            id: 5,
-            title: "RedxChess",
-            category: "AI / Game Engine",
-            technologies: "Python, C++, Neural Networks, Bitboards, UCI Protocol",
-            image: "/images/redxchess.png",
-            description: "A high-performance chess engine rated 3640 ELO. Features advanced search algorithms, neural network evaluation, and optimized bitboard representation for lightning-fast move generation."
+            degree: "Intermediate (MPC)",
+            institution: "Sree Navodaya Jr. College",
+            period: "June 2021 – April 2023",
+            location: "Visakhapatnam, India",
+            description: "Completed Higher Secondary Education focusing on Mathematics, Physics, and Chemistry (MPC).",
+            grade: "Percentage: 96.4%"
         },
         {
-            id: 6,
-            title: "Floodhub",
-            category: "AI / ML",
-            technologies: "Python, TensorFlow, Pandas, React, FastAPI, GIS",
-            image: "/images/floodhub.png",
-            description: "A flood prediction model specifically designed for Bangladesh's river systems. Analyzes weather patterns, water levels, and historical data to provide accurate flood forecasts and alerts."
-        },
-        {
-            id: 7,
-            title: "Phoenix",
-            category: "AI Assistant",
-            technologies: "Python, Speech Recognition, PyAutoGUI, OpenAI API, Tkinter",
-            image: "/images/phoenix.png",
-            description: "A JARVIS-inspired personal AI desktop assistant. Controls system functions, manages tasks, answers queries, automates workflows, and provides voice-activated computing experience."
-        },
-        {
-            id: 8,
-            title: "HekTools",
-            category: "Security / Android",
-            technologies: "Kotlin, Android SDK, Firebase, Python, Encryption",
-            image: "/images/hektools.png",
-            description: "An advanced Android monitoring and security research tool. Features remote device management, activity logging, and encrypted data transmission for security testing purposes."
+            degree: "Secondary Education",
+            institution: "Ravindra Bharathi E.M School",
+            period: "June 2016 – April 2021",
+            location: "Visakhapatnam, India",
+            description: "Completed Secondary School Education (10th Standard) with distinction.",
+            grade: "Percentage: 98%"
         }
     ],
     contact: {
-        email: "redoyanul1234@gmail.com",
-        github: "https://github.com/red1-for-hek",
-        linkedin: "https://linkedin.com/in/red1-for-hek",
-        twitter: "https://x.com/red_1_ul",
-        facebook: "https://www.facebook.com/redoyanulhaque.hacker.official",
-        instagram: "https://www.instagram.com/red_1_ul"
+        email: "revadijaswanth@gmail.com",
+        web3formsKey: "af8a7726-4c99-4dd7-a2de-7071846a1990",
+        resumeUrl: "/Revadi_Jaswanth_Resume.pdf",
+        github: "https://github.com/Revadi-Jaswanth",
+        linkedin: "https://www.linkedin.com/in/naga-sai-jaswanth-revadi-93702b295/",
+        twitter: "https://x.com/JaswanthRevadi",
+        facebook: "#",
+        instagram: "https://www.instagram.com/jaswanth_revadi/"
     },
     skills: {
         develop: {
-            title: "AI DEVELOPER",
+            title: "AI/ML ENGINEER",
             description: "Building intelligent systems & AI solutions",
-            details: "Developing AI agents, chatbots, and machine learning models using Python, TensorFlow, and PyTorch. Specializing in LLMs, NLP, deep learning, and autonomous systems.",
-            tools: ["Python", "TensorFlow", "PyTorch", "OpenCV", "Scikit-learn", "LLMs", "NLP", "Deep Learning", "Chatbots", "AI Agents"]
+            details: "Building AI/ML models, generative AI apps, and deep learning solutions with Python, TensorFlow, and Google Gemini API.",
+            tools: ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "NumPy", "Pandas", "Google Gemini API", "Generative AI", "Google Colab", "Jupyter Notebook"]
         },
         design: {
             title: "FULL-STACK",
-            description: "Modern web development & scalable applications",
-            details: "Building responsive and performant web applications using React, Next.js, Node.js, and databases. Creating seamless user experiences with modern UI/UX principles.",
-            tools: ["React", "Next.js", "Node.js", "TypeScript", "MongoDB", "PostgreSQL", "TailwindCSS", "REST APIs", "Docker", "Git"]
+            description: "Modern web & application development",
+            details: "Crafting scalable web apps with React, Next.js, Node.js, Flask, FastAPI, and modern databases.",
+            tools: ["React", "Next.js", "Node.js", "Express.js", "Flask", "FastAPI", "MongoDB", "MySQL", "JavaScript", "Git"]
         }
-    }
+    },
+    certifications: [
+        {
+            title: "Applied AI Foundations",
+            issuer: "OpenAI Academy",
+            icon: "🤖",
+            verified: true,
+            url: "#"
+        },
+        {
+            title: "AI Foundations",
+            issuer: "OpenAI Academy",
+            icon: "🧠",
+            verified: true,
+            url: "#"
+        },
+        {
+            title: "Agents and Workflows",
+            issuer: "OpenAI Academy",
+            icon: "⚙️",
+            verified: true,
+            url: "#"
+        },
+        {
+            title: "Artificial Intelligence Fundamentals",
+            issuer: "IBM SkillsBuild",
+            icon: "🤖",
+            verified: true,
+            url: "#"
+        },
+        {
+            title: "Python Tech Stack",
+            issuer: "Infosys Springboard",
+            icon: "🐍",
+            verified: true,
+            url: "#"
+        },
+        {
+            title: "Python",
+            issuer: "HackerRank",
+            icon: "🐍",
+            verified: true,
+            url: "#"
+        },
+        {
+            title: "SQL",
+            issuer: "HackerRank",
+            icon: "🗄️",
+            verified: true,
+            url: "#"
+        },
+        {
+            title: "Problem Solving",
+            issuer: "HackerRank",
+            icon: "🧩",
+            verified: true,
+            url: "#"
+        },
+        {
+            title: "Tata GenAI Powered Data Analytics Job Simulation",
+            issuer: "Forage",
+            icon: "📊",
+            verified: true,
+            url: "#"
+        },
+        {
+            title: "Deloitte Australia Data Analytics Job Simulation",
+            issuer: "Forage",
+            icon: "📈",
+            verified: true,
+            url: "#"
+        },
+        {
+            title: "Introduction to Industry 4.0 and Industrial Internet of Things",
+            issuer: "NPTEL (IIT Kharagpur)",
+            icon: "🏭",
+            verified: true,
+            url: "#"
+        },
+        {
+            title: "Discrete Mathematics",
+            issuer: "NPTEL (IIT Madras)",
+            icon: "📐",
+            verified: true,
+            url: "#"
+        }
+    ]
 };
 
 

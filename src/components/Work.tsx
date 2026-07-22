@@ -73,13 +73,16 @@ const Work = () => {
 
                   <div>
                     <h4>{project.title}</h4>
-                    <p>{project.category}</p>
+                    {project.category && <p>{project.category}</p>}
                   </div>
                 </div>
-                <h4>Tools and features</h4>
-                <p>{project.technologies}</p>
+                <h4>Description & Tools</h4>
+                <p>{project.description}</p>
+                <p style={{ marginTop: "8px", color: "var(--accentColor)", fontSize: "13px", fontWeight: "400" }}>
+                  {project.technologies}
+                </p>
               </div>
-              <WorkImage image={project.image} alt={project.title} />
+              <WorkImage image={project.image} alt={project.title} link={project.link} />
             </div>
           ))}
           {/* See All Works Button */}
